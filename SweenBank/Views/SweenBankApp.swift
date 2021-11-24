@@ -11,7 +11,7 @@ import SwiftUI
 struct SweenBankApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AccountSummaryScreen()
         }
     }
 }

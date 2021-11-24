@@ -1,5 +1,5 @@
 //
-//  AccountSummaryViewModel.swift
+//  AppState.swift
 //  SweenBank
 //
 //  Created by Jonathan Sweeney on 11/24/21.
@@ -7,29 +7,21 @@
 
 import Foundation
 
-class AccountSummaryViewModel: ObservableObject {
+class AppState: ObservableObject {
+    @Published var accounts = [Account]()
     
-    private var _accountModels = [Account]()
-    @Published var accounts: [AccountViewModel] = [AccountViewModel]()
-    
-    var total: Double {
-        _accountModels.map { $0.balance }.reduce(0, +)
+    init() {
+        populateAllAccounts()
     }
     
-    func setAccounts(_ accounts: [Account]) {
-        _accountModels = accounts
-        self.accounts = _accountModels.map(AccountViewModel.init)
-    }
-    
-    func getAllAccounts() {
+    private func populateAllAccounts() {
         
         AccountService.shared.getAllAccounts { result in
             switch result {
             case .success(let accounts):
                 if let accounts = accounts {
                     DispatchQueue.main.async {
-                        self._accountModels = accounts
-                        self.accounts = accounts.map(AccountViewModel.init)
+                        self.accounts = accounts
                     }
                 }
             case .failure(let error):
@@ -43,5 +35,9 @@ class AccountSummaryViewModel: ObservableObject {
                 }
             }
         }
+    }
+    
+    func update() {
+        populateAllAccounts()
     }
 }

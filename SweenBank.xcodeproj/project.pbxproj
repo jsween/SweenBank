@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F2826D47274EADE000AB6038 /* SweenBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D46274EADE000AB6038 /* SweenBankApp.swift */; };
-		F2826D49274EADE000AB6038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D48274EADE000AB6038 /* ContentView.swift */; };
 		F2826D4B274EADE300AB6038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2826D4A274EADE300AB6038 /* Assets.xcassets */; };
 		F2826D4E274EADE300AB6038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2826D4D274EADE300AB6038 /* Preview Assets.xcassets */; };
 		F2826D5B274EAF3100AB6038 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D5A274EAF3100AB6038 /* Double+Extensions.swift */; };
@@ -20,12 +19,15 @@
 		F2826D67274EB3FF00AB6038 /* NetworkErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D66274EB3FF00AB6038 /* NetworkErrorType.swift */; };
 		F2826D69274ECB9C00AB6038 /* AccountSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D68274ECB9C00AB6038 /* AccountSummaryViewModel.swift */; };
 		F2826D6B274EDC2500AB6038 /* AccountSummaryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D6A274EDC2500AB6038 /* AccountSummaryScreen.swift */; };
+		F2826D6E274EDE5000AB6038 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D6D274EDE5000AB6038 /* AccountListView.swift */; };
+		F2826D70274EE14D00AB6038 /* AccountListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D6F274EE14D00AB6038 /* AccountListRowItemView.swift */; };
+		F2826D72274EE8CC00AB6038 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D71274EE8CC00AB6038 /* AccountViewModel.swift */; };
+		F2826D74274EE93600AB6038 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D73274EE93600AB6038 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F2826D43274EADE000AB6038 /* SweenBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweenBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2826D46274EADE000AB6038 /* SweenBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweenBankApp.swift; sourceTree = "<group>"; };
-		F2826D48274EADE000AB6038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F2826D4A274EADE300AB6038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2826D4D274EADE300AB6038 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2826D5A274EAF3100AB6038 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
@@ -37,6 +39,10 @@
 		F2826D66274EB3FF00AB6038 /* NetworkErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorType.swift; sourceTree = "<group>"; };
 		F2826D68274ECB9C00AB6038 /* AccountSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewModel.swift; sourceTree = "<group>"; };
 		F2826D6A274EDC2500AB6038 /* AccountSummaryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryScreen.swift; sourceTree = "<group>"; };
+		F2826D6D274EDE5000AB6038 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
+		F2826D6F274EE14D00AB6038 /* AccountListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListRowItemView.swift; sourceTree = "<group>"; };
+		F2826D71274EE8CC00AB6038 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		F2826D73274EE93600AB6038 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +75,12 @@
 		F2826D45274EADE000AB6038 /* SweenBank */ = {
 			isa = PBXGroup;
 			children = (
-				F2826D58274EAE0E00AB6038 /* Services */,
 				F2826D55274EADF500AB6038 /* Models */,
 				F2826D56274EADFA00AB6038 /* Views */,
 				F2826D59274EAE1400AB6038 /* ViewModels */,
 				F2826D54274EADF100AB6038 /* Extensions */,
-				F2826D46274EADE000AB6038 /* SweenBankApp.swift */,
+				F2826D58274EAE0E00AB6038 /* Services */,
+				F2826D75274EE93D00AB6038 /* State */,
 				F2826D4A274EADE300AB6038 /* Assets.xcassets */,
 				F2826D4C274EADE300AB6038 /* Preview Content */,
 			);
@@ -112,7 +118,7 @@
 		F2826D56274EADFA00AB6038 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F2826D48274EADE000AB6038 /* ContentView.swift */,
+				F2826D46274EADE000AB6038 /* SweenBankApp.swift */,
 				F2826D57274EAE0800AB6038 /* Screens */,
 			);
 			path = Views;
@@ -122,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F2826D6A274EDC2500AB6038 /* AccountSummaryScreen.swift */,
+				F2826D6C274EDE1800AB6038 /* Subviews */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -138,8 +145,26 @@
 			isa = PBXGroup;
 			children = (
 				F2826D68274ECB9C00AB6038 /* AccountSummaryViewModel.swift */,
+				F2826D71274EE8CC00AB6038 /* AccountViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F2826D6C274EDE1800AB6038 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				F2826D6D274EDE5000AB6038 /* AccountListView.swift */,
+				F2826D6F274EE14D00AB6038 /* AccountListRowItemView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		F2826D75274EE93D00AB6038 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				F2826D73274EE93600AB6038 /* AppState.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,13 +237,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2826D6E274EDE5000AB6038 /* AccountListView.swift in Sources */,
 				F2826D67274EB3FF00AB6038 /* NetworkErrorType.swift in Sources */,
 				F2826D5B274EAF3100AB6038 /* Double+Extensions.swift in Sources */,
 				F2826D63274EB38400AB6038 /* AccountType.swift in Sources */,
 				F2826D69274ECB9C00AB6038 /* AccountSummaryViewModel.swift in Sources */,
 				F2826D5D274EAFBC00AB6038 /* URL+Extensions.swift in Sources */,
-				F2826D49274EADE000AB6038 /* ContentView.swift in Sources */,
+				F2826D74274EE93600AB6038 /* AppState.swift in Sources */,
 				F2826D5F274EB0C900AB6038 /* View+Extensions.swift in Sources */,
+				F2826D72274EE8CC00AB6038 /* AccountViewModel.swift in Sources */,
+				F2826D70274EE14D00AB6038 /* AccountListRowItemView.swift in Sources */,
 				F2826D65274EB3B600AB6038 /* AccountService.swift in Sources */,
 				F2826D47274EADE000AB6038 /* SweenBankApp.swift in Sources */,
 				F2826D61274EB31E00AB6038 /* Account.swift in Sources */,
