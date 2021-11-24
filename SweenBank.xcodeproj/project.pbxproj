@@ -11,6 +11,9 @@
 		F2826D49274EADE000AB6038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D48274EADE000AB6038 /* ContentView.swift */; };
 		F2826D4B274EADE300AB6038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2826D4A274EADE300AB6038 /* Assets.xcassets */; };
 		F2826D4E274EADE300AB6038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2826D4D274EADE300AB6038 /* Preview Assets.xcassets */; };
+		F2826D5B274EAF3100AB6038 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D5A274EAF3100AB6038 /* Double+Extensions.swift */; };
+		F2826D5D274EAFBC00AB6038 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D5C274EAFBC00AB6038 /* URL+Extensions.swift */; };
+		F2826D5F274EB0C900AB6038 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D5E274EB0C900AB6038 /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		F2826D48274EADE000AB6038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F2826D4A274EADE300AB6038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2826D4D274EADE300AB6038 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2826D5A274EAF3100AB6038 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		F2826D5C274EAFBC00AB6038 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		F2826D5E274EB0C900AB6038 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,12 @@
 		F2826D45274EADE000AB6038 /* SweenBank */ = {
 			isa = PBXGroup;
 			children = (
+				F2826D58274EAE0E00AB6038 /* Services */,
+				F2826D55274EADF500AB6038 /* Models */,
+				F2826D56274EADFA00AB6038 /* Views */,
+				F2826D59274EAE1400AB6038 /* ViewModels */,
+				F2826D54274EADF100AB6038 /* Extensions */,
 				F2826D46274EADE000AB6038 /* SweenBankApp.swift */,
-				F2826D48274EADE000AB6038 /* ContentView.swift */,
 				F2826D4A274EADE300AB6038 /* Assets.xcassets */,
 				F2826D4C274EADE300AB6038 /* Preview Content */,
 			);
@@ -65,6 +75,53 @@
 				F2826D4D274EADE300AB6038 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2826D54274EADF100AB6038 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2826D5A274EAF3100AB6038 /* Double+Extensions.swift */,
+				F2826D5C274EAFBC00AB6038 /* URL+Extensions.swift */,
+				F2826D5E274EB0C900AB6038 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2826D55274EADF500AB6038 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2826D56274EADFA00AB6038 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2826D48274EADE000AB6038 /* ContentView.swift */,
+				F2826D57274EAE0800AB6038 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2826D57274EAE0800AB6038 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F2826D58274EAE0E00AB6038 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F2826D59274EAE1400AB6038 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2826D5B274EAF3100AB6038 /* Double+Extensions.swift in Sources */,
+				F2826D5D274EAFBC00AB6038 /* URL+Extensions.swift in Sources */,
 				F2826D49274EADE000AB6038 /* ContentView.swift in Sources */,
+				F2826D5F274EB0C900AB6038 /* View+Extensions.swift in Sources */,
 				F2826D47274EADE000AB6038 /* SweenBankApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
