@@ -29,6 +29,7 @@
 		F2826D7D274F474300AB6038 /* AddAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D7C274F474300AB6038 /* AddAccountScreen.swift */; };
 		F2826D7F274FFEE200AB6038 /* TransferFundsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D7E274FFEE200AB6038 /* TransferFundsRequest.swift */; };
 		F2826D81274FFF9D00AB6038 /* TransferFundsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D80274FFF9D00AB6038 /* TransferFundsResponse.swift */; };
+		F2826D8327500C5600AB6038 /* TransferFundsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D8227500C5600AB6038 /* TransferFundsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		F2826D7C274F474300AB6038 /* AddAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountScreen.swift; sourceTree = "<group>"; };
 		F2826D7E274FFEE200AB6038 /* TransferFundsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsRequest.swift; sourceTree = "<group>"; };
 		F2826D80274FFF9D00AB6038 /* TransferFundsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsResponse.swift; sourceTree = "<group>"; };
+		F2826D8227500C5600AB6038 /* TransferFundsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				F2826D68274ECB9C00AB6038 /* AccountSummaryViewModel.swift */,
 				F2826D71274EE8CC00AB6038 /* AccountViewModel.swift */,
 				F2826D7A274F42CC00AB6038 /* AddAccountViewModel.swift */,
+				F2826D8227500C5600AB6038 /* TransferFundsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				F2826D6E274EDE5000AB6038 /* AccountListView.swift in Sources */,
 				F2826D7D274F474300AB6038 /* AddAccountScreen.swift in Sources */,
 				F2826D67274EB3FF00AB6038 /* NetworkErrorType.swift in Sources */,
+				F2826D8327500C5600AB6038 /* TransferFundsViewModel.swift in Sources */,
 				F2826D5B274EAF3100AB6038 /* Double+Extensions.swift in Sources */,
 				F2826D63274EB38400AB6038 /* AccountType.swift in Sources */,
 				F2826D81274FFF9D00AB6038 /* TransferFundsResponse.swift in Sources */,
