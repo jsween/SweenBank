@@ -7,12 +7,8 @@
 
 import Foundation
 
-class AccountViewModel {
+struct AccountViewModel {
     var account: Account
-    
-    init(account: Account) {
-        self.account = account
-    }
     
     var name: String {
         account.name

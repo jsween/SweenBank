@@ -15,6 +15,6 @@ extension URL {
     }
     
     static func urlForCreateAccounts() -> URL? {
-        return URL(string: "\(glitchBaseUrl)/api/TO_DO_HERE")
+        return URL(string: "\(glitchBaseUrl)/api/accounts")
     }
 }

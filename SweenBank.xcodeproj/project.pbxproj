@@ -23,6 +23,10 @@
 		F2826D70274EE14D00AB6038 /* AccountListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D6F274EE14D00AB6038 /* AccountListRowItemView.swift */; };
 		F2826D72274EE8CC00AB6038 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D71274EE8CC00AB6038 /* AccountViewModel.swift */; };
 		F2826D74274EE93600AB6038 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D73274EE93600AB6038 /* AppState.swift */; };
+		F2826D77274EFC2200AB6038 /* CreateAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D76274EFC2200AB6038 /* CreateAccountRequest.swift */; };
+		F2826D79274EFCC800AB6038 /* CreateAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D78274EFCC800AB6038 /* CreateAccountResponse.swift */; };
+		F2826D7B274F42CC00AB6038 /* AddAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D7A274F42CC00AB6038 /* AddAccountViewModel.swift */; };
+		F2826D7D274F474300AB6038 /* AddAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D7C274F474300AB6038 /* AddAccountScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		F2826D6F274EE14D00AB6038 /* AccountListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListRowItemView.swift; sourceTree = "<group>"; };
 		F2826D71274EE8CC00AB6038 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		F2826D73274EE93600AB6038 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		F2826D76274EFC2200AB6038 /* CreateAccountRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequest.swift; sourceTree = "<group>"; };
+		F2826D78274EFCC800AB6038 /* CreateAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountResponse.swift; sourceTree = "<group>"; };
+		F2826D7A274F42CC00AB6038 /* AddAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewModel.swift; sourceTree = "<group>"; };
+		F2826D7C274F474300AB6038 /* AddAccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,8 @@
 				F2826D60274EB31E00AB6038 /* Account.swift */,
 				F2826D62274EB38400AB6038 /* AccountType.swift */,
 				F2826D66274EB3FF00AB6038 /* NetworkErrorType.swift */,
+				F2826D76274EFC2200AB6038 /* CreateAccountRequest.swift */,
+				F2826D78274EFCC800AB6038 /* CreateAccountResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				F2826D6A274EDC2500AB6038 /* AccountSummaryScreen.swift */,
+				F2826D7C274F474300AB6038 /* AddAccountScreen.swift */,
 				F2826D6C274EDE1800AB6038 /* Subviews */,
 			);
 			path = Screens;
@@ -146,6 +157,7 @@
 			children = (
 				F2826D68274ECB9C00AB6038 /* AccountSummaryViewModel.swift */,
 				F2826D71274EE8CC00AB6038 /* AccountViewModel.swift */,
+				F2826D7A274F42CC00AB6038 /* AddAccountViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -238,19 +250,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2826D6E274EDE5000AB6038 /* AccountListView.swift in Sources */,
+				F2826D7D274F474300AB6038 /* AddAccountScreen.swift in Sources */,
 				F2826D67274EB3FF00AB6038 /* NetworkErrorType.swift in Sources */,
 				F2826D5B274EAF3100AB6038 /* Double+Extensions.swift in Sources */,
 				F2826D63274EB38400AB6038 /* AccountType.swift in Sources */,
 				F2826D69274ECB9C00AB6038 /* AccountSummaryViewModel.swift in Sources */,
 				F2826D5D274EAFBC00AB6038 /* URL+Extensions.swift in Sources */,
+				F2826D79274EFCC800AB6038 /* CreateAccountResponse.swift in Sources */,
 				F2826D74274EE93600AB6038 /* AppState.swift in Sources */,
 				F2826D5F274EB0C900AB6038 /* View+Extensions.swift in Sources */,
 				F2826D72274EE8CC00AB6038 /* AccountViewModel.swift in Sources */,
 				F2826D70274EE14D00AB6038 /* AccountListRowItemView.swift in Sources */,
 				F2826D65274EB3B600AB6038 /* AccountService.swift in Sources */,
+				F2826D7B274F42CC00AB6038 /* AddAccountViewModel.swift in Sources */,
 				F2826D47274EADE000AB6038 /* SweenBankApp.swift in Sources */,
 				F2826D61274EB31E00AB6038 /* Account.swift in Sources */,
 				F2826D6B274EDC2500AB6038 /* AccountSummaryScreen.swift in Sources */,
+				F2826D77274EFC2200AB6038 /* CreateAccountRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
