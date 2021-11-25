@@ -17,4 +17,8 @@ extension URL {
     static func urlForCreateAccounts() -> URL? {
         return URL(string: "\(glitchBaseUrl)/api/accounts")
     }
+    
+    static func urlForTransferFunds() -> URL? {
+        return URL(string: "\(glitchBaseUrl)/api/transfer")
+    }
 }
