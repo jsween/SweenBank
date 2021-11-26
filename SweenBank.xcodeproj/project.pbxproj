@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2030BB62751721A00D4F441 /* TransferFundsAccountSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2030BB52751721900D4F441 /* TransferFundsAccountSelectionView.swift */; };
 		F2826D47274EADE000AB6038 /* SweenBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D46274EADE000AB6038 /* SweenBankApp.swift */; };
 		F2826D4B274EADE300AB6038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2826D4A274EADE300AB6038 /* Assets.xcassets */; };
 		F2826D4E274EADE300AB6038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2826D4D274EADE300AB6038 /* Preview Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2030BB52751721900D4F441 /* TransferFundsAccountSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsAccountSelectionView.swift; sourceTree = "<group>"; };
 		F2826D43274EADE000AB6038 /* SweenBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweenBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2826D46274EADE000AB6038 /* SweenBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweenBankApp.swift; sourceTree = "<group>"; };
 		F2826D4A274EADE300AB6038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				F2826D6D274EDE5000AB6038 /* AccountListView.swift */,
 				F2826D6F274EE14D00AB6038 /* AccountListRowItemView.swift */,
+				F2030BB52751721900D4F441 /* TransferFundsAccountSelectionView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				F2826D7B274F42CC00AB6038 /* AddAccountViewModel.swift in Sources */,
 				F2826D47274EADE000AB6038 /* SweenBankApp.swift in Sources */,
 				F2826D61274EB31E00AB6038 /* Account.swift in Sources */,
+				F2030BB62751721A00D4F441 /* TransferFundsAccountSelectionView.swift in Sources */,
 				F2826D6B274EDC2500AB6038 /* AccountSummaryScreen.swift in Sources */,
 				F2826D77274EFC2200AB6038 /* CreateAccountRequest.swift in Sources */,
 			);
