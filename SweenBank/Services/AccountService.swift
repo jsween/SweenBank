@@ -55,7 +55,7 @@ class AccountService {
         }.resume()
     }
     
-    func transferFunds(transferFundRequest: TransferFundRequest, completion: @escaping (Result<TransferFundResponse?, NetworkError>) -> Void) {
+    func transferFunds(transferFundRequest: TransferFundRequest, completion: @escaping (Result<TransferFundResponse, NetworkError>) -> Void) {
         guard let url = URL.urlForTransferFunds() else {
             return completion(.failure(.badUrl))
         }

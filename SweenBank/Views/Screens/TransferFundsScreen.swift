@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TransferFundsScreen: View {
     
+    @Environment(\.presentationMode) var presentationMode
     @ObservedObject private var transferFundsVM = TransferFundsViewModel()
     @State private var showSheet: Bool = false
     @State private var isFromAccount = false
@@ -32,11 +33,22 @@ struct TransferFundsScreen: View {
         VStack {
             AccountListView(accounts: transferFundsVM.accounts)
                 .frame(height: 300)
-            Spacer()
             TransferFundsAccountSelectionView(transferFundsVM: transferFundsVM, showSheet: $showSheet, isFromAccount: $isFromAccount)
-        }
-        .onAppear {
-            self.transferFundsVM.populateAccounts()
+            Spacer()
+                .onAppear {
+                    self.transferFundsVM.populateAccounts()
+                }
+            Text(self.transferFundsVM.message ?? "")
+                .foregroundColor(.red)
+            Button("Submit Transfer") {
+                self.transferFundsVM.submitTranser() {
+                    print("success")
+                    self.presentationMode.wrappedValue.dismiss()
+                }
+            }
+            .padding()
+            .opacity(self.transferFundsVM.readyToSubmitTransfer ? 1.0 : 0)
+            .disabled(!self.transferFundsVM.readyToSubmitTransfer)
         }
         .actionSheet(isPresented: $showSheet, content: {
             ActionSheet(title: Text("TransferFunds"), message: Text("Choose Account"), buttons: self.actionSheetButtons)
@@ -79,6 +91,10 @@ struct TransferFundsAccountSelectionView: View {
             .foregroundColor(.white)
             .opacity(self.transferFundsVM.fromAccount != nil ? 1.0 : 0.5)
             .disabled(self.transferFundsVM.fromAccount == nil)
+            
+            TextField("Amount", text: self.$transferFundsVM.transferAmount)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            Spacer()
         }
         .padding()
     }
