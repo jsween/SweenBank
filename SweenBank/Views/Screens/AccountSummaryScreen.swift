@@ -11,6 +11,7 @@ struct AccountSummaryScreen: View {
     
     @ObservedObject private var accountSummaryVM = AccountSummaryViewModel()
     @State private var isPresented: Bool = false
+    //TODO: activeSheet is not updated on first update (xfer button). Look at other wrappers
     @State private var activeSheet: ActiveSheet = .addAccount
     
     var body: some View {

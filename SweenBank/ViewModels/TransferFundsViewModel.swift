@@ -12,6 +12,29 @@ class TransferFundsViewModel: ObservableObject {
     var toAccount: AccountViewModel?
     @Published var accounts: [AccountViewModel] = [AccountViewModel]()
     
+    var fromAccountType: String {
+        fromAccount != nil ? fromAccount!.accountType : ""
+    }
+    
+    var toAccountType: String {
+        toAccount != nil ? toAccount!.accountType : ""
+    }
+    
+    var filteredAccounts: [AccountViewModel] {
+        if self.fromAccount == nil {
+            return accounts
+        } else {
+            return accounts.filter {
+
+                guard let fromAccount = fromAccount else {
+                    return false
+                }
+
+                return $0.accountId != fromAccount.accountId
+            }
+        }
+    }
+    
     func populateAccounts() {
         AccountService.shared.getAllAccounts { result in
             switch result {
