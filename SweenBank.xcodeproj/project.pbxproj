@@ -30,6 +30,8 @@
 		F2826D7F274FFEE200AB6038 /* TransferFundsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D7E274FFEE200AB6038 /* TransferFundsRequest.swift */; };
 		F2826D81274FFF9D00AB6038 /* TransferFundsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D80274FFF9D00AB6038 /* TransferFundsResponse.swift */; };
 		F2826D8327500C5600AB6038 /* TransferFundsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D8227500C5600AB6038 /* TransferFundsViewModel.swift */; };
+		F2826D8527500EE800AB6038 /* TransferFundsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D8427500EE800AB6038 /* TransferFundsScreen.swift */; };
+		F2826D8827500F9900AB6038 /* ActiveSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2826D8727500F9800AB6038 /* ActiveSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		F2826D7E274FFEE200AB6038 /* TransferFundsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsRequest.swift; sourceTree = "<group>"; };
 		F2826D80274FFF9D00AB6038 /* TransferFundsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsResponse.swift; sourceTree = "<group>"; };
 		F2826D8227500C5600AB6038 /* TransferFundsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsViewModel.swift; sourceTree = "<group>"; };
+		F2826D8427500EE800AB6038 /* TransferFundsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferFundsScreen.swift; sourceTree = "<group>"; };
+		F2826D8727500F9800AB6038 /* ActiveSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +126,8 @@
 		F2826D55274EADF500AB6038 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F2826D8627500F6700AB6038 /* Enums */,
 				F2826D60274EB31E00AB6038 /* Account.swift */,
-				F2826D62274EB38400AB6038 /* AccountType.swift */,
-				F2826D66274EB3FF00AB6038 /* NetworkErrorType.swift */,
 				F2826D76274EFC2200AB6038 /* CreateAccountRequest.swift */,
 				F2826D78274EFCC800AB6038 /* CreateAccountResponse.swift */,
 				F2826D7E274FFEE200AB6038 /* TransferFundsRequest.swift */,
@@ -147,6 +150,7 @@
 			children = (
 				F2826D6A274EDC2500AB6038 /* AccountSummaryScreen.swift */,
 				F2826D7C274F474300AB6038 /* AddAccountScreen.swift */,
+				F2826D8427500EE800AB6038 /* TransferFundsScreen.swift */,
 				F2826D6C274EDE1800AB6038 /* Subviews */,
 			);
 			path = Screens;
@@ -186,6 +190,16 @@
 				F2826D73274EE93600AB6038 /* AppState.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		F2826D8627500F6700AB6038 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F2826D62274EB38400AB6038 /* AccountType.swift */,
+				F2826D66274EB3FF00AB6038 /* NetworkErrorType.swift */,
+				F2826D8727500F9800AB6038 /* ActiveSheet.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +285,10 @@
 				F2826D79274EFCC800AB6038 /* CreateAccountResponse.swift in Sources */,
 				F2826D74274EE93600AB6038 /* AppState.swift in Sources */,
 				F2826D5F274EB0C900AB6038 /* View+Extensions.swift in Sources */,
+				F2826D8827500F9900AB6038 /* ActiveSheet.swift in Sources */,
 				F2826D72274EE8CC00AB6038 /* AccountViewModel.swift in Sources */,
 				F2826D70274EE14D00AB6038 /* AccountListRowItemView.swift in Sources */,
+				F2826D8527500EE800AB6038 /* TransferFundsScreen.swift in Sources */,
 				F2826D65274EB3B600AB6038 /* AccountService.swift in Sources */,
 				F2826D7B274F42CC00AB6038 /* AddAccountViewModel.swift in Sources */,
 				F2826D47274EADE000AB6038 /* SweenBankApp.swift in Sources */,

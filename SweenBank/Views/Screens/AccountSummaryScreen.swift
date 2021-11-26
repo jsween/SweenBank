@@ -11,6 +11,7 @@ struct AccountSummaryScreen: View {
     
     @ObservedObject private var accountSummaryVM = AccountSummaryViewModel()
     @State private var isPresented: Bool = false
+    @State private var activeSheet: ActiveSheet = .addAccount
     
     var body: some View {
         VStack {
@@ -20,20 +21,31 @@ struct AccountSummaryScreen: View {
                         .frame(height: g.size.height/2)
                     Text("\(accountSummaryVM.total.formatAsCurrency())")
                     Spacer()
+                    Button("Transfer Funds") {
+                        self.activeSheet = .transferFunds
+                        self.isPresented = true
+                    }
+                    .padding()
                 }
             }
         }
         .onAppear {
             self.accountSummaryVM.getAllAccounts()
         }
-        .navigationBarItems(trailing: Button("Add Account") {
-            isPresented = true
-        })
         .sheet(isPresented: $isPresented, onDismiss: {
             self.accountSummaryVM.getAllAccounts()
         }) {
-            AddAccountScreen()
+            switch self.activeSheet {
+            case .addAccount:
+                AddAccountScreen()
+            case .transferFunds:
+                TransferFundsScreen()
+            }
         }
+        .navigationBarItems(trailing: Button("Add Account") {
+            self.activeSheet = .addAccount
+            isPresented = true
+        })
         .navigationTitle("Account Summary")
         .embedInNavigationView()
     }
