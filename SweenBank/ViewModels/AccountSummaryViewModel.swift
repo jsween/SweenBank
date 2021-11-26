@@ -9,6 +9,7 @@ import Foundation
 
 class AccountSummaryViewModel: ObservableObject {
     
+    @Published var activeSheet: ActiveSheet = .addAccount
     private var _accountModels = [Account]()
     @Published var accounts: [AccountViewModel] = [AccountViewModel]()
     

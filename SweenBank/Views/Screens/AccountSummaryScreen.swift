@@ -11,8 +11,6 @@ struct AccountSummaryScreen: View {
     
     @ObservedObject private var accountSummaryVM = AccountSummaryViewModel()
     @State private var isPresented: Bool = false
-    //TODO: activeSheet is not updated on first update (xfer button). Look at other wrappers
-    @State private var activeSheet: ActiveSheet = .addAccount
     
     var body: some View {
         VStack {
@@ -23,7 +21,7 @@ struct AccountSummaryScreen: View {
                     Text("\(accountSummaryVM.total.formatAsCurrency())")
                     Spacer()
                     Button("Transfer Funds") {
-                        self.activeSheet = .transferFunds
+                        self.accountSummaryVM.activeSheet = .transferFunds
                         self.isPresented = true
                     }
                     .padding()
@@ -36,7 +34,7 @@ struct AccountSummaryScreen: View {
         .sheet(isPresented: $isPresented, onDismiss: {
             self.accountSummaryVM.getAllAccounts()
         }) {
-            switch self.activeSheet {
+            switch self.accountSummaryVM.activeSheet {
             case .addAccount:
                 AddAccountScreen()
             case .transferFunds:
@@ -44,7 +42,7 @@ struct AccountSummaryScreen: View {
             }
         }
         .navigationBarItems(trailing: Button("Add Account") {
-            self.activeSheet = .addAccount
+            self.accountSummaryVM.activeSheet = .addAccount
             isPresented = true
         })
         .navigationTitle("Account Summary")
